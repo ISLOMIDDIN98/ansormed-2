@@ -23,6 +23,9 @@ bady{
   padding-bottom: 25px;
 
 }
+.site-div:active{
+  opacity: 0.6;
+}
 
 .icon-img{
   border-radius: 50%;;
@@ -37,14 +40,17 @@ bady{
   width: 119px;
   margin-left: 16px;
   text-decoration: none;
+transition: color 0.4s ease;
+}
 
+.sitename:hover{
+  color: rgba(222, 46, 84, 1)
 }
 
 .sitenav-links a{
   text-decoration: none;
+  color: #222
 }
-
-
 
 .sitenav-list{
   display: flex;
@@ -52,12 +58,17 @@ bady{
   font-family:  "Open Sans";
   font-size: 14px;
   line-height: 21px;
+  transition: color 0.4s ease,
+  opacity 0.4s ease;;
 }
 
-.sitenav-links a{
-  color:#222;
+.sitenav-list a:hover{
+  color:  #DE2E54;
+  transition: color 0.4s ease;
 }
 
+.sitenav-list a:active{
+  opacity: 0.6;}
 
 
 .sitenav-links{
@@ -66,7 +77,7 @@ bady{
   line-height: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #222;
+ color: rgb(221, 27, 27);
 }
 
 .sitenav-list :not(:last-child){
@@ -99,10 +110,30 @@ bady{
     letter-spacing: 2px;
   }
 
+  .main-link:hover{
+    color: #DE2E54;
+    background-color: #FFFFFF;
+    border: 2px solid #DE2E54;
+  }
+
+  .main-link:active{
+    color:#fff ;
+    background-color: #DE2E54;
+opacity: 0.6;
+  }
+
   .link{
     width:200px;
   }
 
+  .link:hover{
+    color: #fff;
+    background-color: rgba(222, 46, 84, 0.8);
+  }
+
+  .link:active{
+    background-color: rgba(222, 46, 84, 0.6);
+  }
   /* hero */
   .hero-section{
     display: flex;
@@ -272,6 +303,19 @@ bady{
     font-family:" Open Sans Condensed";
     font-size: 15px;
     line-height: 18px;
+    transition: color 0.4s ease,
+    opacity 0.4s ease ;
+  }
+
+  .promo-link:hover{
+color: #fff;
+background-color: #DE2E54;
+border: 2px solid #DE2E54;;
+  }
+
+  .promo-link:active{
+    background-color: #DE2E54;
+opacity: 0.6;
   }
 
   /* footer */
@@ -285,6 +329,14 @@ bady{
 
     background-color:#222222;;
 
+  }
+
+  .footer-icon{
+    color: #FFFFFF;
+  }
+
+  .footer-icon:active{
+    color: #fff;
   }
 
   .site-footer a{
@@ -314,7 +366,20 @@ bady{
     color: #FFFFFF;
     font-size: 14px;
     line-height: 21px;
+    transition: color 0.4s ease,
+    opacity 0.4s ease;
   }
+
+  .footer-links a:hover{
+    color:  #DE2E54;
+  }
+
+
+  .footer-links a:active{
+    color:  #fff;
+    opacity: 0.6;
+  }
+
 
 
   .footer-links :not(:last-child){
