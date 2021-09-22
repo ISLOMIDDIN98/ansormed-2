@@ -4,7 +4,13 @@ bady{
   font-family: "Open Sans", "Open Sans Condensed","sans-serif";
 }
 
-
+*:focus{
+  outline-color: rgb(75, 9, 230);
+  outline-offset: 3px;
+  outline-width: 2px;
+  outline-style:dashed ;
+  ou
+}
 /* site-header */
 
 .site-header{
