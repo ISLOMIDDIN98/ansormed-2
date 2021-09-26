@@ -1,4 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+
 bady{
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 24px;
   font-family: "Open Sans", "Open Sans Condensed","sans-serif";
@@ -9,18 +15,30 @@ bady{
   outline-offset: 3px;
   outline-width: 2px;
   outline-style:dashed ;
-  ou
 }
+
+.container{
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* site-header */
 
 .site-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+
   background-color: #fff;
   width: 1440px;
 }
 
+.site-header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .site-div{
   display: flex;
   justify-content: center;
@@ -129,6 +147,7 @@ opacity: 0.6;
   }
 
   .link{
+    margin-bottom: 132px;
     width:200px;
   }
 
@@ -142,24 +161,27 @@ opacity: 0.6;
   }
   /* hero */
   .hero-section{
-    display: flex;
     width: 1440px;
     height: 533px;
-    justify-content: space-around;
     background-color: #0EB4C1;
-
   }
 
+  .hero-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .hero-heading{
     width: 500px;
     height: 86px;
     left: 170px;
-    top: 218px;
+    /* top: 218px; */
     font-size: 36px;
     line-height: 120%;
     color: #FFFFFF;
-    padding-top: 120px;
-    padding-bottom: 16px;
+    padding: 0;
+    /* padding-top: 120px; */
+    margin-bottom:50px;
     font-family: "Open Sans";
     font-size: 36px;
     line-height: 43.2px;
@@ -169,15 +191,18 @@ opacity: 0.6;
     width: 440px;
     height: 108px;
     left: 170px;
-    top: 320px;
+
     font-size: 18px;
     line-height: 150%;
     color: #FFFFFF;
-    padding-bottom: 36px;
+padding: 0;
+
+    margin: bottom 48px;
     font-family: "Open Sans";
     font-size: 18px;
     line-height: 27px;
   }
+
 
   .hero-img{
     padding-top: 29px;
@@ -263,15 +288,18 @@ opacity: 0.6;
   }
 
   .promo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 
     width: 365px;
     background-color: #0EB4C1;;
 
     width: 1440px;
 
+  }
+  .promo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .promo-heading{
@@ -327,16 +355,16 @@ opacity: 0.6;
   /* footer */
 
   .site-footer{
+    width: 1440px;
+    background-color:#222222;;
+  }
+
+  .footer-container{
     display: flex;
     flex-direction: row;
     justify-content:space-around ;
     align-items: center;
-    width: 1440px;
-
-    background-color:#222222;;
-
   }
-
   .footer-icon{
     color: #FFFFFF;
   }
