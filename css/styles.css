@@ -78,6 +78,7 @@ transition: color 0.4s ease;
 
 .sitenav-list{
   display: flex;
+  text-decoration: none;
   list-style: none;
   font-family:  "Open Sans";
   font-size: 14px;
@@ -86,6 +87,11 @@ transition: color 0.4s ease;
   opacity 0.4s ease;;
 }
 
+.sitenav-list a{
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+}
 .sitenav-list a:hover{
   color:  #DE2E54;
   transition: color 0.4s ease;
@@ -147,7 +153,7 @@ opacity: 0.6;
   }
 
   .link{
-    margin-bottom: 132px;
+
     width:200px;
   }
 
@@ -205,12 +211,14 @@ padding: 0;
 
 
   .hero-img{
+
     padding-top: 29px;
     padding-bottom: 0px;
     width: 423px;
     height: 504px;
 
   }
+
 
   /* features */
 
